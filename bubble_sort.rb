@@ -25,7 +25,7 @@ def bubble_sort_by(arr)
     have_sorted = false
     (0...len).each do |i|
       next unless yield(arr[i], arr[i + 1]).to_i >= 1
-      arr[i] > arr[i + 1]
+      #   arr[i] > arr[i + 1]
       arr[i], arr[i + 1] = arr[i + 1], arr[i]
       have_sorted = true
     end
@@ -36,6 +36,6 @@ end
 sort_by = bubble_sort_by(%w[hi hello hey]) do |left, right|
   left.length - right.length
 end
-p sort_by
 p bubble_sort(to_sort)
+p sort_by
 # p bubble_sort_by(to_sort)
