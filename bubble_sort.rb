@@ -24,7 +24,8 @@ def bubble_sort_by(arr)
   while have_sorted
     have_sorted = false
     (0...len).each do |i|
-      next unless yield(arr[i], arr[i + 1]).to_i >= 1      
+      next unless yield(arr[i], arr[i + 1]).to_i >= 1
+      
       arr[i], arr[i + 1] = arr[i + 1], arr[i]
       have_sorted = true
     end
