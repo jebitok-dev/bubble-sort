@@ -1,5 +1,7 @@
 def bubble_sort(arr) 
     len = arr.length
+    arr if len <= 1
+
     arr_new = true 
     while arr_new
         arr_new = false
@@ -12,4 +14,5 @@ def bubble_sort(arr)
     end
     arr
 end
-p bubble_sort([11, 5, 2,7,6, 15])
+p bubble_sort([11, 5])
+
