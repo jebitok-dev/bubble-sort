@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Bubble-sort Algiorithm
+# Bubble-sort Algorithm
 
 Solving on bubble_sort and bubble_sort_by challenges using Ruby.
 
